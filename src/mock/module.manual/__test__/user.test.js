@@ -14,5 +14,8 @@ describe("validate", () => {
     expect(verifyPassword).toHaveBeenCalledWith(password);
     expect(verifyUsername).toHaveBeenCalledWith(username);
     expect(result).toBeTruthy();
+
+    const resultTwo = validate("", "");
+    expect(resultTwo).toBeTruthy();
   });
 });
